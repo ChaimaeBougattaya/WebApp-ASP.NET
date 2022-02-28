@@ -1,0 +1,16 @@
+﻿@page
+@model WebApp.Pages.Admin.IndexModel
+@{
+    ViewData["Title"] = "Login page";
+}
+<form method="post" asp-antiforgery="true">
+    <label class="col-form-label-lg">login : </label>
+    <input id="login" type="text" name="username" />
+    <br />
+
+    <label class="col-form-label-lg">password : </label>
+    <input id="psw" type="password"  name="password"/>
+    <br />
+
+    <button class="btn btn-primary" type="submit">Login</button>
+</form>
